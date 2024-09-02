@@ -3,79 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Delights Bakery</title>
+    <title>About Us - Sweet Harmony Bakery</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         header {
-            background-color: #ff9999;
-            color: white;
-            padding: 20px;
+            background: #ff9f9f;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
             text-align: center;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-        nav {
-            background-color: #ff6666;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-            display: inline-block;
-        }
-        nav a:hover {
-            background-color: #ff4444;
-            border-radius: 5px;
-        }
-        .container {
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             padding: 20px;
         }
-        .hero {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
+        .about h2 {
+            font-size: 2em;
+            color: #ff6f61;
         }
-        .hero h2 {
-            margin: 0;
-            font-size: 3em;
-            font-weight: bold;
+        .about p {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         .section {
-            padding: 40px 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
-        .section h2 {
-            color: #ff6666;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .section h3 {
+            font-size: 1.8em;
+            color: #ff6f61;
             margin-bottom: 10px;
         }
-        .contact a {
-            color: #ff6666;
-            text-decoration: none;
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
         }
         footer {
-            background-color: #ff9999;
-            color: white;
-    
+            background: #ff9f9f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sweet Harmony Bakery</h1>
+        </div>
+    </header>
+
+    <div class="container about">
+        <img src="your-bakery-image.jpg" alt="Sweet Harmony Bakery">
+        <h2>Welcome to Sweet Harmony Bakery</h2>
+        <p>At Sweet Harmony Bakery, we believe that the finest moments in life are best enjoyed with a touch of sweetness. Nestled in the heart of our charming town, our bakery is more than just a place to satisfy your cravings; it's a haven where passion, tradition, and creativity come together to create unforgettable experiences.</p>
+        
+        <div class="section">
+            <h3>Our Story</h3>
+            <p>Our journey began with a simple dream: to bring joy and warmth to our community through the art of baking. Founded by [Founder's Name], a lifelong lover of all things sweet, Sweet Harmony Bakery started as a small family endeavor in [Year]. What began in a cozy kitchen quickly blossomed into a beloved local gem, thanks to the unwavering support of our wonderful customers and the dedication of our talented team.</p>
+        </div>
+        
+        <div class="section">
+            <h3>Our Philosophy</h3>
+            <p>At Sweet Harmony Bakery, every pastry, cake, and cookie is crafted with love and care. We take pride in using only the highest quality ingredients, sourced locally whenever possible. Our recipes are a blend of time-honored traditions and innovative techniques, ensuring that each treat is both delicious and unique. From the first bite to the last crumb, our goal is to make every experience memorable.</p>
+        </div>
+        
+        <div class="section">
+            <h3>What Sets Us Apart</h3>
+            <ul>
+                <li><strong>Handcrafted Goodness:</strong> Each of our creations is made from scratch, using recipes that have been carefully perfected over time.</li>
+                <li><strong>Locally Sourced Ingredients:</strong> We believe in supporting our community and use locally sourced ingredients to ensure freshness and sustainability.</li>
+                <li><strong>Warm Atmosphere:</strong> Our bakery is designed to be a welcoming space where you can relax, enjoy a cup of coffee, and savor the simple pleasures of life.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Join Us</h3>
+            <p>Whether you're celebrating a special occasion or simply indulging in a well-deserved treat, we invite you to experience the magic of Sweet Harmony Bakery. Visit us at [Address], or explore our menu online at [Website URL]. We can't wait to share our passion for baking with you and become a part of your cherished moments.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you for supporting Sweet Harmony Bakery. Here's to sweet moments and happy memories!</p>
+    </footer>
+</body>
+</html>
