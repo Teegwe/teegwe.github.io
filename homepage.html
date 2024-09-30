@@ -12,7 +12,7 @@
             color: #333;
         }
         header {
-            background-color:#bde7fc;
+            background-color: #bde7fc;
             color: white;
             padding: 10px 0;
             text-align: center;
@@ -23,7 +23,7 @@
             overflow: hidden;
         }
         .menu-item {
-            background:#e7cafc;
+            background: #e7cafc;
             border: 1px solid #ddd;
             margin-bottom: 10px;
             padding: 10px;
@@ -51,6 +51,24 @@
             align-items: center;
             font-size: 2em;
         }
+        /* Styles for Navigation Buttons */
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nav-button {
+            background-color: #f8b400;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav-button:hover {
+            background-color: #e69500;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +79,16 @@
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Navigation Buttons -->
+    <nav>
+        <button class="nav-button" onclick="location.href='#home'">Home</button>
+        <button class="nav-button" onclick="location.href='#about'">About Us</button>
+        <button class="nav-button" onclick="location.href='#menu'">Menu</button>
+        <button class="nav-button" onclick="location.href='#services'">Services</button>
+        <button class="nav-button" onclick="location.href='#contact'">Contact Us</button>
+    </nav>
+
+    <section class="hero" id="home">
         <div>Welcome to Sweet Delights Bakery!</div>
     </section>
 
@@ -85,6 +112,11 @@
                 <h3>Cheesecake</h3>
                 <p>Creamy and decadent cheesecake with a buttery graham cracker crust.</p>
             </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer custom cakes, catering services for events, and delivery options for all your sweet cravings.</p>
         </section>
 
         <section id="contact">
