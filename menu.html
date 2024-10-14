@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Menu - Tropical Theme</title>
+    <title>Bakery Menu</title>
     <style>
-        /* Resetting margins and paddings */
+        /* Global styles */
         * {
             margin: 0;
             padding: 0;
@@ -13,125 +13,104 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #ffecb3 0%, #ffde7d 100%);
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 900px;
+            width: 100%;
             background-color: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         /* Header styling */
         header {
             text-align: center;
-            background: linear-gradient(135deg, #06beb6 0%, #48b1bf 100%);
-            padding: 60px 0;
-            color: white;
-            border-bottom: 5px solid #ffb347;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #eee;
         }
 
-        h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 3.8rem;
-            letter-spacing: 2px;
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 10px;
         }
 
         header p {
-            font-size: 1.4rem;
-            color: #fffdd0;
+            font-size: 1.2rem;
+            color: #666;
         }
 
-        /* Section Headings */
+        /* Section headings */
         h2 {
-            font-size: 2.2rem;
-            color: #f57c00;
-            text-align: center;
-            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            color: #333;
+            margin: 30px 0 15px;
             font-weight: bold;
-            position: relative;
-        }
-
-        h2::before {
-            content: '';
-            width: 60px;
-            height: 4px;
-            background-color: #f57c00;
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 2px;
-        }
-
-        .section {
-            padding: 0 30px 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
 
         /* Menu items */
         .menu-item {
             display: flex;
             justify-content: space-between;
-            margin: 15px 0;
-            padding: 10px 15px;
-            background-color: #ffefd5;
-            border-radius: 10px;
-            transition: all 0.3s ease-in-out;
-            font-size: 1.2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
         }
 
-        .menu-item:hover {
-            background-color: #ffe4b2;
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item span {
+            color: #555;
         }
 
         .price {
-            color: #ff6f00;
+            color: #333;
             font-weight: bold;
         }
 
-        /* Footer styling */
+        /* Footer */
         footer {
             text-align: center;
-            padding: 30px;
-            background: linear-gradient(135deg, #48b1bf 0%, #06beb6 100%);
-            color: white;
-            border-top: 5px solid #ffb347;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-top: 2px solid #eee;
+            margin-top: 40px;
         }
 
         footer p {
-            margin-bottom: 10px;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            color: #666;
         }
 
-        footer a {
-            color: #ffd700;
-            text-decoration: underline;
-        }
-
-        footer a:hover {
-            color: #fffdd0;
-        }
-
-        /* Custom fonts from Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap');
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap');
     </style>
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>[Bakery Name]</h1>
-            <p> Sweet Delights Fresh Every Day</p>
+            <h1>Bakery Delights</h1>
+            <p>Handcrafted Breads, Pastries & Cakes</p>
         </header>
 
-        <section class="section">
+        <section>
             <h2>Pastries</h2>
             <div class="menu-item">
                 <span>Croissants (Plain, Chocolate, Almond)</span>
@@ -147,7 +126,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Cakes & Cupcakes</h2>
             <div class="menu-item">
                 <span>Classic Cakes (Vanilla, Chocolate, Red Velvet, Carrot)</span>
@@ -159,7 +138,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Cookies & Bars</h2>
             <div class="menu-item">
                 <span>Cookies (Chocolate Chip, Oatmeal Raisin, Snickerdoodle)</span>
@@ -175,7 +154,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Breads</h2>
             <div class="menu-item">
                 <span>Sourdough (Loaf)</span>
@@ -191,7 +170,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Beverages</h2>
             <div class="menu-item">
                 <span>Coffee (Regular, Espresso, Latte, Cappuccino)</span>
@@ -208,8 +187,7 @@
         </section>
 
         <footer>
-            <p>Order Online & Custom Cakes Available!</p>
-            <p>Follow us on <a href="#">Instagram</a> @yourbakeryhandle</p>
+            <p>Order online or call for custom cakes!</p>
         </footer>
     </div>
 
