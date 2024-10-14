@@ -6,9 +6,9 @@
     <title>Bakery Menu</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f3e9;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8f0;
+            color: #4a4a4a;
             margin: 0;
             padding: 0;
         }
@@ -21,25 +21,42 @@
 
         header {
             text-align: center;
-            background-color: #f7d8b5;
-            padding: 20px 0;
-            border-bottom: 3px solid #e4a675;
+            background-color: #ffe5d9;
+            padding: 40px 0;
+            border-bottom: 5px solid #f4b183;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            font-family: 'Georgia', serif;
-            font-size: 3rem;
-            color: #8c5a35;
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: #f77f00;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #ffb997;
         }
 
         h2 {
-            color: #d47b35;
+            color: #f77f00;
             font-size: 2.2rem;
             margin-top: 40px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-align: center;
-            border-bottom: 1px dashed #e4a675;
-            padding-bottom: 10px;
+            position: relative;
+        }
+
+        h2::before {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: #f77f00;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .section {
@@ -49,34 +66,48 @@
         .menu-item {
             display: flex;
             justify-content: space-between;
-            margin: 10px 0;
+            margin: 15px 0;
             font-size: 1.2rem;
+            padding: 10px;
+            border-bottom: 1px solid #ffe5d9;
+        }
+
+        .menu-item:hover {
+            background-color: #ffecd1;
+            border-radius: 8px;
         }
 
         .price {
-            color: #8c5a35;
+            color: #f77f00;
             font-weight: bold;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #f7d8b5;
+            padding: 30px 20px;
+            background-color: #ffe5d9;
             margin-top: 40px;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
         }
 
         footer p {
             margin: 0;
+            font-size: 1.2rem;
+            color: #f77f00;
         }
 
-        a {
-            color: #d47b35;
+        footer a {
+            color: #d9534f;
+            font-weight: bold;
             text-decoration: none;
         }
 
-        a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
+
+        /* Custom Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
     </style>
 </head>
 <body>
