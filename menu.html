@@ -8,39 +8,20 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fff8f0;
+            font-family: 'Georgia', serif;
+            background-color: #fdf6f0;
             color: #5e4630;
         }
 
         /* Header Section */
         header {
-            background: linear-gradient(to right, #ffb3ba, #ffdfba);
+            background: linear-gradient(to right, #f6c1c1, #f4e7e7);
             text-align: center;
-            padding: 20px 0;
-            font-size: 2.5rem;
-            color: #fff;
-            font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #ffe1e1;
-            padding: 15px;
-            text-align: center;
-            font-size: 1.2rem;
-        }
-
-        nav a {
+            padding: 40px 0;
+            font-size: 3rem;
             color: #5e4630;
-            margin: 0 15px;
-            text-decoration: none;
             font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #d44a67;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Menu Section */
@@ -55,6 +36,12 @@
             color: #d44a67;
             margin-bottom: 30px;
             text-transform: uppercase;
+            border-bottom: 3px solid #d44a67;
+            display: inline-block;
+        }
+
+        .menu-category {
+            margin-bottom: 50px;
         }
 
         .menu-items {
@@ -102,60 +89,131 @@
 
         /* Footer */
         footer {
-            background-color: #ffe1e1;
+            background-color: #f6c1c1;
             padding: 20px;
             text-align: center;
             font-size: 1rem;
             color: #5e4630;
             margin-top: 50px;
         }
+
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        Sweet Delights Bakery
+        Sweet Delights Bakery Menu
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
     <section class="menu-section">
-        <h2>Our Delicious Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/250x200.png?text=Cupcakes" alt="Cupcakes">
-                <h3>Cupcakes</h3>
-                <p>Fluffy and moist cupcakes topped with creamy buttercream in various flavors.</p>
-                <p class="price">$3.00 each</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/250x200.png?text=Cakes" alt="Cakes">
-                <h3>Cakes</h3>
-                <p>Perfect for birthdays, weddings, or just because. Custom flavors available.</p>
-                <p class="price">$25.00 per cake</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/250x200.png?text=Cookies" alt="Cookies">
-                <h3>Cookies</h3>
-                <p>Freshly baked cookies with gooey centers and crispy edges.</p>
-                <p class="price">$1.50 each</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/250x200.png?text=Pastries" alt="Pastries">
-                <h3>Pastries</h3>
-                <p>Buttery, flaky, and filled with love. Perfect with your morning coffee.</p>
-                <p class="price">$2.50 each</p>
+
+        <!-- Cakes -->
+        <div class="menu-category">
+            <h2>Cakes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Chocolate+Cake" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist chocolate cake with a decadent ganache.</p>
+                    <p class="price">$30.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Vanilla+Cake" alt="Vanilla Cake">
+                    <h3>Vanilla Cake</h3>
+                    <p>Classic vanilla sponge with silky buttercream frosting.</p>
+                    <p class="price">$28.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Red+Velvet+Cake" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Velvety soft red velvet cake with cream cheese frosting.</p>
+                    <p class="price">$32.00</p>
+                </div>
             </div>
         </div>
+
+        <!-- Cupcakes -->
+        <div class="menu-category">
+            <h2>Cupcakes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Strawberry+Cupcake" alt="Strawberry Cupcake">
+                    <h3>Strawberry Cupcake</h3>
+                    <p>Light and fluffy with fresh strawberry buttercream.</p>
+                    <p class="price">$3.50 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Chocolate+Cupcake" alt="Chocolate Cupcake">
+                    <h3>Chocolate Cupcake</h3>
+                    <p>Decadent chocolate cupcake topped with chocolate fudge frosting.</p>
+                    <p class="price">$3.50 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Lemon+Cupcake" alt="Lemon Cupcake">
+                    <h3>Lemon Cupcake</h3>
+                    <p>Tangy lemon cupcake with zesty lemon glaze.</p>
+                    <p class="price">$3.50 each</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies -->
+        <div class="menu-category">
+            <h2>Cookies</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Chocolate+Chip+Cookie" alt="Chocolate Chip Cookie">
+                    <h3>Chocolate Chip Cookie</h3>
+                    <p>Classic chewy chocolate chip cookie with a crispy edge.</p>
+                    <p class="price">$2.00 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Oatmeal+Raisin+Cookie" alt="Oatmeal Raisin Cookie">
+                    <h3>Oatmeal Raisin Cookie</h3>
+                    <p>Soft oatmeal cookie with juicy raisins and a hint of cinnamon.</p>
+                    <p class="price">$2.00 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Peanut+Butter+Cookie" alt="Peanut Butter Cookie">
+                    <h3>Peanut Butter Cookie</h3>
+                    <p>Crunchy peanut butter cookie with rich peanut flavor.</p>
+                    <p class="price">$2.00 each</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pastries -->
+        <div class="menu-category">
+            <h2>Pastries</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Croissant" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <p>Buttery, flaky croissant perfect for breakfast or a snack.</p>
+                    <p class="price">$3.00 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Cinnamon+Roll" alt="Cinnamon Roll">
+                    <h3>Cinnamon Roll</h3>
+                    <p>Soft cinnamon roll with a sweet cream cheese glaze.</p>
+                    <p class="price">$3.50 each</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/250x200.png?text=Pain+Au+Chocolat" alt="Pain Au Chocolat">
+                    <h3>Pain Au Chocolat</h3>
+                    <p>Golden pastry filled with rich, dark chocolate.</p>
+                    <p class="price">$3.50 each</p>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <footer>
-        123 Bakery Lane, Sugar City | Call us: (555) 123-4567 | © 2024 Sweet Delights Bakery
+        <p>123 Bakery Lane, Sweet City | Call us: (555) 123-4567 | © 2024 Sweet Delights Bakery</p>
     </footer>
 
 </body>
