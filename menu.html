@@ -3,140 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Treats Bakery Menu</title>
+    <title>Bakery Menu - Sweet Delights</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fff4e3;
             margin: 0;
             padding: 0;
-            text-align: center;
-            color: #6d4c41;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8f0;
+            color: #5e4630;
         }
+
+        /* Header Section */
         header {
-            background-color: #f8bbd0;
-            padding: 20px;
-            font-size: 2.5em;
-            color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: linear-gradient(to right, #ffb3ba, #ffdfba);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        h1 {
-            margin: 0;
-        }
+
+        /* Navigation */
         nav {
-            background-color: #ffccbc;
-            padding: 10px;
-            font-size: 1.2em;
+            background-color: #ffe1e1;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2rem;
         }
+
         nav a {
-            color: #6d4c41;
-            text-decoration: none;
+            color: #5e4630;
             margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #d44a67;
         }
+
+        /* Menu Section */
         .menu-section {
-            padding: 50px;
+            padding: 50px 20px;
             max-width: 1200px;
             margin: auto;
         }
+
         .menu-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #d81b60;
+            font-size: 2.5rem;
+            color: #d44a67;
+            margin-bottom: 30px;
+            text-transform: uppercase;
         }
+
         .menu-items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
         }
+
         .menu-item {
             background-color: #ffffff;
             padding: 20px;
-            width: 250px;
-            margin: 20px;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .menu-item:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
         .menu-item img {
             width: 100%;
             border-radius: 10px;
+            margin-bottom: 15px;
         }
+
         .menu-item h3 {
-            font-size: 1.8em;
-            margin: 10px 0;
-            color: #d81b60;
+            font-size: 1.8rem;
+            color: #d44a67;
+            margin-bottom: 10px;
         }
+
         .menu-item p {
-            font-size: 1.2em;
-            color: #6d4c41;
+            font-size: 1.1rem;
+            color: #5e4630;
+            margin-bottom: 10px;
         }
+
         .price {
+            font-size: 1.3rem;
             font-weight: bold;
-            color: #e91e63;
+            color: #d44a67;
         }
+
+        /* Footer */
         footer {
-            background-color: #f8bbd0;
+            background-color: #ffe1e1;
             padding: 20px;
+            text-align: center;
+            font-size: 1rem;
+            color: #5e4630;
             margin-top: 50px;
-            font-size: 1em;
-            color: white;
-            position: relative;
-        }
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Sweet Treats Bakery</h1>
+        Sweet Delights Bakery
     </header>
 
     <nav>
         <a href="#">Home</a>
-        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
         <a href="#">Contact</a>
     </nav>
 
     <section class="menu-section">
-        <h2>Our Menu</h2>
+        <h2>Our Delicious Menu</h2>
         <div class="menu-items">
             <div class="menu-item">
                 <img src="https://via.placeholder.com/250x200.png?text=Cupcakes" alt="Cupcakes">
                 <h3>Cupcakes</h3>
-                <p>Delicious cupcakes topped with fluffy buttercream.</p>
-                <p class="price">$3.50 each</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://via.placeholder.com/250x200.png?text=Cookies" alt="Cookies">
-                <h3>Cookies</h3>
-                <p>Chewy chocolate chip, oatmeal raisin, and more!</p>
-                <p class="price">$2.00 each</p>
+                <p>Fluffy and moist cupcakes topped with creamy buttercream in various flavors.</p>
+                <p class="price">$3.00 each</p>
             </div>
             <div class="menu-item">
                 <img src="https://via.placeholder.com/250x200.png?text=Cakes" alt="Cakes">
                 <h3>Cakes</h3>
-                <p>Perfect for every occasion, available in multiple flavors.</p>
+                <p>Perfect for birthdays, weddings, or just because. Custom flavors available.</p>
                 <p class="price">$25.00 per cake</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/250x200.png?text=Cookies" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Freshly baked cookies with gooey centers and crispy edges.</p>
+                <p class="price">$1.50 each</p>
             </div>
             <div class="menu-item">
                 <img src="https://via.placeholder.com/250x200.png?text=Pastries" alt="Pastries">
                 <h3>Pastries</h3>
-                <p>Flaky, buttery, and irresistible pastries.</p>
-                <p class="price">$4.00 each</p>
+                <p>Buttery, flaky, and filled with love. Perfect with your morning coffee.</p>
+                <p class="price">$2.50 each</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>123 Bakery Lane, Cupcake City | Call us: (555) 123-4567</p>
+        123 Bakery Lane, Sugar City | Call us: (555) 123-4567 | © 2024 Sweet Delights Bakery
     </footer>
 
 </body>
