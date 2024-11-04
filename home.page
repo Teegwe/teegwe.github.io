@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory Arts Dance</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Title styling */
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            color: hotpink;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Main content styling */
+        .content {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        /* Buttons */
+        .button {
+            background-color: hotpink;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff69b4;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title Section -->
+    <div class="title">Victory Arts Dance</div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <p>Welcome to Victory Arts Dance! Join us for an energetic and inspiring dance experience.</p>
+        <button class="button">Classes</button>
+        <button class="button">Our Team</button>
+        <button class="button">Contact Us</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 Victory Arts Dance. All rights reserved.</footer>
+
+</body>
+</html>
