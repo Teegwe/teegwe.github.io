@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bakery Collecting Game</title>
+  <title>Static Bakery Game</title>
   <style>
     body {
       display: flex;
@@ -24,118 +24,35 @@
       border: 2px solid #c27c45;
       background-color: #fff7e6;
       margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
     }
 
     .bakery-item {
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      cursor: pointer;
       font-size: 30px;
+      cursor: pointer;
       transition: transform 0.2s;
     }
 
     .bakery-item:hover {
       transform: scale(1.2);
     }
-
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #c27c45;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #b0693e;
-    }
   </style>
 </head>
 <body>
-  <h1>Bakery Collecting Game</h1>
-  <p>Click on bakery items to collect points! You have 30 seconds.</p>
-  <p><strong>Score:</strong> <span id="score">0</span></p>
-  <p><strong>Time Left:</strong> <span id="time">30</span>s</p>
-  <div class="game-area" id="gameArea"></div>
-  
-  <button id="startButton">Start Game</button>
-  
-  <script>
-    let score = 0;
-    let timeLeft = 30;
-    let gameInterval, countdownInterval;
-
-    const gameArea = document.getElementById("gameArea");
-    const scoreDisplay = document.getElementById("score");
-    const timeDisplay = document.getElementById("time");
-    const startButton = document.getElementById("startButton");
-
-    // Bakery items (images can be replaced with URLs)
-    const bakeryItems = [
-      "🥐", // Croissant
-      "🍩", // Donut
-      "🍰", // Cake
-      "🍪", // Cookie
-      "🥖", // Baguette
-    ];
-
-    function startGame() {
-      score = 0;
-      timeLeft = 30;
-      scoreDisplay.innerText = score;
-      timeDisplay.innerText = timeLeft;
-      startButton.disabled = true;
-
-      // Start generating items and the countdown
-      gameInterval = setInterval(generateBakeryItem, 1000);
-      countdownInterval = setInterval(countdown, 1000);
-    }
-
-    function countdown() {
-      if (timeLeft > 0) {
-        timeLeft--;
-        timeDisplay.innerText = timeLeft;
-      } else {
-        endGame();
-      }
-    }
-
-    function generateBakeryItem() {
-      const item = document.createElement("div");
-      item.classList.add("bakery-item");
-      item.innerText = bakeryItems[Math.floor(Math.random() * bakeryItems.length)];
-
-      // Position the item randomly in the game area
-      item.style.top = Math.random() * (gameArea.offsetHeight - 50) + "px";
-      item.style.left = Math.random() * (gameArea.offsetWidth - 50) + "px";
-
-      item.onclick = function () {
-        score += 10;
-        scoreDisplay.innerText = score;
-        gameArea.removeChild(item); // Remove item after clicking
-      };
-
-      gameArea.appendChild(item);
-
-      // Remove the item after a short delay to keep the area clear
-      setTimeout(() => {
-        if (gameArea.contains(item)) {
-          gameArea.removeChild(item);
-        }
-      }, 2000);
-    }
-
-    function endGame() {
-      clearInterval(gameInterval);
-      clearInterval(countdownInterval);
-      alert("Time's up! Your score: " + score);
-      startButton.disabled = false;
-    }
-
-    startButton.addEventListener("click", startGame);
-  </script>
+  <h1>Bakery Game</h1>
+  <p>Click on bakery items for fun!</p>
+  <div class="game-area">
+    <div class="bakery-item">🥐</div>
+    <div class="bakery-item">🍩</div>
+    <div class="bakery-item">🍰</div>
+    <div class="bakery-item">🍪</div>
+    <div class="bakery-item">🥖</div>
+    <div class="bakery-item">🍞</div>
+    <div class="bakery-item">🥧</div>
+  </div>
 </body>
 </html>
