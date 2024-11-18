@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,106 +6,152 @@
     <title>About Us - Sweet Delights Bakery</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-            background-color: #f9f9f9;
             margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2; /* Soft pink background */
+            color: #333;
         }
         header {
-            background:#f7bcd3;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #fff 3px solid;
+            background-color: #ffb6c1; /* Light pink header */
+            color: white;
             text-align: center;
+            padding: 20px 10px;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
         }
-        .about {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
-        }
-        .about h2 {
-            font-size: 2em;
-            color: #b5b4ed;
-        }
-        .about p {
-            font-size: 1.2em;
-            margin: 15px 0;
-        }
-        .about img {
-            max-width: 100%;
-            height: auto;
+            background: white;
             border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .section {
-            margin: 20px 0;
+        h2 {
+            color: #ff69b4; /* Hot pink for headings */
         }
-        .section h3 {
-            font-size: 1.8em;
-            color:#b5b4ed;
-            margin-bottom: 10px;
+        h3 {
+            color: #ff85c5;
         }
-        .section p {
-            font-size: 1.1em;
-            margin-bottom: 15px;
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #ff69b4;
+            font-weight: bold;
         }
         footer {
-            background: #f7bcd3;
-            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
+            background-color: #ffb6c1;
+            color: white;
+            padding: 10px;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+        footer .home-button {
+            margin-top: 10px;
+        }
+        footer a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff69b4;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        footer a:hover {
+            background-color: #ff85c5;
+        }
+        .team, .values, .history {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Sweet Delights Bakery</h1>
-        </div>
+        <h1>Sweet Delights Bakery</h1>
+        <p>Where Every Bite Feels Like Bliss!</p>
     </header>
-
-    <div class="container about">
-        <img src="https://www.halfbakedharvest.com/wp-content/uploads/2022/03/Double-Strawberry-Cupcakes-1.jpg" width="150" height="400" alt="Sweet Delights Bakery">
-        <p>At Sweet Delights Bakery, we believe that the finest moments in life are best enjoyed with a touch of sweetness. Nestled in the heart of our charming town, our bakery is more than just a place to satisfy your cravings; it's a haven where passion, tradition, and creativity come together to create unforgettable experiences.</p>
-        
-        <div class="section">
-            <h3>Our Story</h3>
-            <p>Our journey began with a simple dream: to bring joy and warmth to our community through the art of baking. Founded by Teegan, a lifelong lover of all things sweet, Sweet Delights Bakery started as a small family endeavor in 2024. What began in a cozy kitchen quickly blossomed into a beloved local gem, thanks to the unwavering support of our wonderful customers and the dedication of our talented team.</p>
-        </div>
-        
-        <div class="section">
-            <h3>Our Philosophy</h3>
-            <p>At Sweet Delights Bakery, every pastry, cake, and cookie is crafted with love and care. We take pride in using only the highest quality ingredients, sourced locally whenever possible. Our recipes are a blend of time-honored traditions and innovative techniques, ensuring that each treat is both delicious and unique. From the first bite to the last crumb, our goal is to make every experience memorable.</p>
-        </div>
-        
-        <div class="section">
-            <h3>What Sets Us Apart</h3>
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to <span class="highlight">Sweet Delights Bakery</span>, your destination for heavenly baked goods 
+                crafted with love and passion. Every treat we create is a blend of quality ingredients, creative artistry, 
+                and a sprinkle of magic that brings smiles to our customers.
+            </p>
+        </section>
+        <section class="values">
+            <h2>Our Values</h2>
+            <p>At Sweet Delights Bakery, we believe in:</p>
             <ul>
-                <li><strong>Handcrafted Goodness:</strong> Each of our creations is made from scratch, using recipes that have been carefully perfected over time.</li>
-                <li><strong>Locally Sourced Ingredients:</strong> We believe in supporting our community and use locally sourced ingredients to ensure freshness and sustainability.</li>
-                <li><strong>Warm Atmosphere:</strong> Our bakery is designed to be a welcoming space where you can relax, enjoy a cup of coffee, and savor the simple pleasures of life.</li>
+                <li><strong>Quality:</strong> Using only the finest ingredients to ensure exceptional taste.</li>
+                <li><strong>Community:</strong> Supporting local suppliers and bringing joy to our neighborhood.</li>
+                <li><strong>Creativity:</strong> Innovating with new flavors and designs to delight every customer.</li>
+                <li><strong>Sustainability:</strong> Practicing eco-friendly methods to care for the planet.</li>
             </ul>
+        </section>
+        <section class="history">
+            <h2>Our Story</h2>
+            <p>
+                Sweet Delights Bakery was founded in 2010 by Sarah and James, a husband-and-wife duo who shared a love 
+                for baking and bringing people together. What started as a small home kitchen operation has blossomed 
+                into a beloved bakery, serving thousands of customers each year.
+            </p>
+            <p>
+                Our journey has been filled with exciting milestones, from our first storefront to winning local 
+                "Best Bakery" awards. Through it all, our mission has remained the same: to spread happiness, one 
+                baked good at a time.
+            </p>
+        </section>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <p>
+                Behind every cupcake and loaf of bread is a team of talented bakers, decorators, and customer service 
+                professionals who share a passion for excellence. Our head chef, Sarah, brings over 15 years of 
+                experience and a love for creating unique flavor combinations.
+            </p>
+            <p>
+                Together, we work to ensure every customer leaves with a smile and a treat they'll never forget.
+            </p>
+        </section>
+        <section class="offerings">
+            <h2>What We Offer</h2>
+            <h3>Our Menu Highlights:</h3>
+            <ul>
+                <li>Artisan Bread: Freshly baked daily with a crisp crust and fluffy interior.</li>
+                <li>Custom Cakes: Designed for weddings, birthdays, and special events.</li>
+                <li>Signature Cupcakes: Available in classic and seasonal flavors.</li>
+                <li>Cookies and Pastries: Perfect for a quick snack or gift.</li>
+                <li>Specialty Drinks: Enjoy our house-made coffee and hot chocolate pairings.</li>
+            </ul>
+            <h3>Custom Orders:</h3>
+            <p>
+                Have a special request? Whether it's allergen-free options or unique designs, we’re happy to work with 
+                you to bring your vision to life.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sweet Delights Bakery. All rights reserved.</p>
+        <p>Visit us at 123 Baker Street, Dreamtown, or call us at (555) 123-4567.</p>
+        <div class="home-button">
+            <a href="https://teegwe.github.io/homepage.html">Home</a>
         </div>
-
-        <footer>
-        <p>Thank you for supporting Sweet Delights Bakery. Here's to sweet moments and happy memories!</p>
-             <p><a href="homepage.html">Back to Home</a></p> 
     </footer>
 </body>
 </html>
